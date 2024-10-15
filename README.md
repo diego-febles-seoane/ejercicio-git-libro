@@ -74,3 +74,51 @@ To https://github.com/diego-febles-seoane/ejercicio-git-libro
 
 ```
 
+## Se crea el fichero carpeta 1 y se modifica
+
+```code
+
+cat > capitulos/capitulo2.txt
+El flujo de trabajo básico con Git consiste en:
+ 1- Hacer cambios en el repositorio.
+ 2- Añadir los cambios a la zona de intercambio temporal.
+ 3- Hacer un commit de los cambios.
+
+```
+
+## Se añade al repositorio
+
+```code
+
+git add .
+
+```
+
+## Se realiza el commit 
+
+```code
+
+git commit -m "Añadido capítulo 2."
+[main 6c3aecf] Añadido capítulo 2.
+ 2 files changed, 80 insertions(+), 1 deletion(-)
+ rewrite README.md (100%)
+ create mode 100644 capitulos/capitulo2.txt
+
+```
+
+## Se actualiza en le repositorio
+
+```code
+
+git push
+Enumerando objetos: 8, listo.
+Contando objetos: 100% (8/8), listo.
+Compresión delta usando hasta 4 hilos
+Comprimiendo objetos: 100% (5/5), listo.
+Escribiendo objetos: 100% (5/5), 1.20 KiB | 1.20 MiB/s, listo.
+Total 5 (delta 0), reusados 0 (delta 0), pack-reusados 0
+To https://github.com/diego-febles-seoane/ejercicio-git-libro
+   be39c32..6c3aecf  main -> main
+
+```
+
